@@ -23,7 +23,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 
-// TODO - change to int32_t?
 std::vector<int> array1;
 std::vector<int> array2;
 std::vector<int> mergedArray;
@@ -89,8 +88,6 @@ private:
 
     void sortMergeArrays() 
     {
-        //int arr1Size = sizeof(array1) / sizeof(array1[0]); TODO
-        //int arr2Size = sizeof(array2) / sizeof(array2[0]); TODO
         mergedArray.resize(arr1Size + arr2Size); // TODO - change to int32_t?
 
         int arr1Index = 0;
